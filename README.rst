@@ -1,6 +1,6 @@
 This project documents the Participatory Processes Backend
 
-The full documentation is hosted at `Read the Docs <https://participatory-backend.readthedocs.io/>`_.
+The full documentation is hosted at `Read the Docs <https://participatory-tool.readthedocs.io/>`_.
 
 - cd into the project folder
 
