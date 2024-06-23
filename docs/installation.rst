@@ -10,7 +10,7 @@ Pre-requisites
 Install the following before proceeding
 
 1. Install docker
-See `Docker installation <https://docs.docker.com/engine/install/ubuntu/>` 
+See `Docker installation <https://docs.docker.com/engine/install/ubuntu/>`_
 
 1. Install docker-compose
 

@@ -22,19 +22,19 @@ Backend
 
 This tool contains 3 main modules
 
-1. Participatory Process Designer
+**1. Participatory Process Designer**
 
 - This module enables users to design participatory processes and the respective instruments supporting those processes
 - Users also assign permissions to users who are authorized to view, capture or analyze data against a specific instrument
 - Instruments created are referred to as **Engagement Forms**
 - Users can also create **Engagement Templates** that outline the specific instruments to be deployed to an **Engagement** that uses that Engagement Template
 
-2. Technical Data Module
+**2. Technical Data Module**
 
 - This module deals with ingestion of various technical data points and different analyses that can be performed against the data points. Examples of technical data can be County Statistics, Shape files and raster layers for geographic data
 - Once a technical analysis has been defined, the same analysis will be available to the end users
 
-3. Dashboard and Reporting
+**3. Dashboard and Reporting**
 
 - This module is responsible for providing the means to generate analysis, reports and dashboards against data collected using Engagement Forms
 

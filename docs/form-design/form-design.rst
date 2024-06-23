@@ -13,7 +13,8 @@ There are variety of fieldtypes available in the backend. Each one has its own u
     :align: center
     :alt: Engagement Form Field
 
-**Data**  
+**Data**
+
 The data field will be a simple text field. It allows you to enter a value of up to 140 characters, making this the most generic field type. You can enable validations for the following types of data:
 
 - Name
@@ -34,14 +35,18 @@ This will enable you to have a checkbox here. You can set the Default value to 1
 
 Using the field type "Select", you can create a drop-down field. You can specify all selectable values in the Options field, each value separated by a new line. One of the selectable values can be copied into the Default field. This value will then be selected by default in a new form. 
 
-**NB**. Use a Select field when you have standard options that are few in number and that are unlikely to ever change
+.. note::
+    Use a Select field when you have standard options that are few in number and that are unlikely to ever change
+
 
 **Attach**
+
 Attach field allows you to browse a field from the File Manager and attach the same herein.
 
 .. image:: ../_static/images/attach-field-type.png
     :align: center
     :alt: Attach field
+
 
 **Date**
 
@@ -66,11 +71,13 @@ For example,
     :align: center
     :alt: Column Break
 
+
 will result into
 
 .. image:: ../_static/images/column-break-field-type_2.png
     :align: center
     :alt: Column Break Result
+
 
 **Currency**
 
@@ -81,12 +88,15 @@ Currency field holds numeric value, like Item Price, Amount, etc. Currency field
 Float field carries numeric value, up to nine decimal places.
 
 **Geolocation**
+
 A Geolocation field will show a map view on which you can draw polygons, lines, and points. The data is stored as a GeoJSON feature_collection.
 
 **Int (Integer)**
+
 The integer field holds numeric value, without decimal place.
 
 **Text**
+
 Text field carries text content and has more character limit than the Data field.
  
 **Table MultiSelect**
@@ -94,6 +104,7 @@ Text field carries text content and has more character limit than the Data field
 This is a combination of 'Link' type and 'Table' type fields. Instead of a child table with 'Add Row' button, in one field multiple values can be selected.
 
 **Time**
+
 This is a Time field where you can define the Time in the field.
 
 

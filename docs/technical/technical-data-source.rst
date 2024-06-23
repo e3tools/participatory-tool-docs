@@ -24,7 +24,7 @@ Thematic and continuous rasters may be displayed as data layers along with other
     :align: center
     :alt: Sample raster 
 
-See :ref:`Raster Layers <raster>`
+See :doc:`Raster Layers <raster>`
 
 **2. Shape Files**
 ------------------
@@ -54,18 +54,23 @@ The shapefile format is a digital vector storage format for storing geographic l
 
 In each of the .shp, .shx, and .dbf files, the shapes in each file correspond to each other in sequence (i.e., the first record in the .shp file corresponds to the first record in the .shx and .dbf files, etc.). The .shp and .shx files have various fields with different endianness, so an implementer of the file formats must be very careful to respect the endianness of each field and treat it properly.
 
-.. image:: ../_static/images/shapefile.png
+.. figure:: ../_static/images/shapefile.png
     :align: center
     :alt: Shape files
+    :class: with-border
 
-.. image:: ../_static/images/shapefile-file-list.jpg
+    Sample shape file
+
+.. figure:: ../_static/images/shapefile-file-list.jpg
     :align: center
     :alt: Shapefile file list
 
+    Sample contents of a Shape File
 
-See :ref:`Shape File <shapefile>`
 
-**2. Tabular Data**
+See :doc:`Shape File <shapefile>`
+
+**3. Tabular Data**
 -------------------
 
 Tabular data represents data that is represented as spreadsheets. Examples of such data is census data, population and other data such as those represented in county statistical abstract
@@ -79,9 +84,7 @@ To create a Technical Data Source, Go to Engage -> Technical Data Source
     :align: center
     :alt: Technical Data Source
 
+
 - Give a descriptive name to the data source
 - Checking the *Is Published* makes the data source available for defining technical analyses
-- Specify the type of data source. You will need to have defined the respective Raster, Shape File or Tabular Data items before creating a data source. See :ref:`Raster Layers <raster>` and :ref:`Shape File <shapefile>`
-
-
-
+- Specify the type of data source. You will need to have defined the respective Raster, Shape File or Tabular Data items before creating a data source. See :doc:`Raster Layers <raster>` and :doc:`Shape File <shapefile>`

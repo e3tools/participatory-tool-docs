@@ -12,7 +12,7 @@ Form Fields are the building blocks of an Engagement Form. Each Form Field has t
 This specifies the descriptive text that will be displayed to the user to explain to them the data being captured by that field. Make sure that the field labels are as self-explanatory as possible. As a convention, the labels are always named such that the first letter of each word is in upper case and all other letters are in lower case, e.g **First Name**
 
 **Field Type**
-This defines the type of data being stored by the field. Several field types exists such as integers, date, currency etc. See :ref:`Field Types <form-design>`
+This defines the type of data being stored by the field. Several field types exists such as integers, date, currency etc. See :doc:`Field Types <form-design>`
 
 **Field Name**
 This is the name that will be assigned to a column in the table storing the form records in the database. The following conventions are followed when defining the field name:
