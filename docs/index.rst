@@ -9,9 +9,15 @@ Welcome to participatory-tool-docs's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   :glob:
 
-
-
+   README
+   installation
+   form-design/index 
+   engagement/index
+   technical/index
+   reports/index
+     
 Indices and tables
 ==================
 
