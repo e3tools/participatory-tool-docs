@@ -25,7 +25,40 @@ By setting the options to "Name", "Email" or "Phone" respectively.
 
 **Link**
 
-Link field is connected to another master (Engagement Form or Reusable List) from where it fetches data. For example, in the Household Form, the County is a Link field. A link references data that has multiple attributes and the data can change. An example is a list of Sub-counties and wards. It can be cumbersome to list sub-counties and wards for each form that uses these data points. In that case, you would define the sub-counties and wards once and then reuse the list by specifying a Link field
+Link field is connected to another master (Engagement Form or Reusable List) from where it fetches data. For example, in the Household Form, the County is a Link field. A link references data that has multiple attributes and the data can change. An example is a list of Sub-counties and wards. It can be cumbersome to list sub-counties and wards for each form that uses these data points. In that case, you would define the sub-counties and wards once and then reuse the list by specifying a Link field.
+
+.. image:: ../_static/images/link-field.png
+    :align: center
+    :alt: Link field
+
+You can specify the filters to be applied when retrieving values for a Link field. The filters are specified in form of a `JSON <https://www.w3schools.com/js/js_json_intro.asp/>`_ object. See examples below:
+
+1. To select only male participants
+
+.. code:: JSON
+
+    { "gender": "Male" } 
+
+or 
+
+.. code:: JSON
+
+    { "gender": ["=", "Male"] } 
+
+
+2. To select a list of counties with population of more than 200000
+
+.. code:: JSON
+
+    { "population": [">", 2000000]" }
+
+2. To select a list of attendees with Farming and Livestock Keeping as their livelihoods
+
+.. code:: JSON
+
+    { "livelihood": ["in", ["Farming", "Livestock Keeping"]]" }
+
+Please note that you will need to replace the field names with the appropriate names as specified when designing the linked form.
 
 **Check**
 
@@ -106,6 +139,14 @@ This is a combination of 'Link' type and 'Table' type fields. Instead of a child
 **Time**
 
 This is a Time field where you can define the Time in the field.
+
+**Linked Field**
+
+This is a field that derives its value from a property of another form that is being referenced in the current form. For example say you want to display the full name of a person after selecting their id number. In this example, you will have to first add a Link field that gets its data from the Person form. Then, you will add a Linked Field that then you specify the value of _Form To Link_ to be the _Person_ field. The value of _Linked Form Property_ will be set as the full name property of the Person form
+
+.. image:: ../_static/images/linked-field.png
+    :align: center
+    :alt: Linked Field
 
 
 Child / Table Form
