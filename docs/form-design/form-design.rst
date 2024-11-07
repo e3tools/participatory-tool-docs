@@ -52,11 +52,13 @@ or
 
     { "population": [">", 2000000]" }
 
+
 2. To select a list of attendees with Farming and Livestock Keeping as their livelihoods
 
 .. code:: JSON
 
     { "livelihood": ["in", ["Farming", "Livestock Keeping"]]" }
+    
 
 Please note that you will need to replace the field names with the appropriate names as specified when designing the linked form.
 
