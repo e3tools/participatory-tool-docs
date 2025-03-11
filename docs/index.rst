@@ -17,6 +17,8 @@ Welcome to participatory-tool-docs's documentation!
    engagement/index
    technical/index
    reports/index
+   frontend/index
+   setup/index
      
 Indices and tables
 ==================

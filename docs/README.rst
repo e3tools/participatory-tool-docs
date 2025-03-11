@@ -11,7 +11,7 @@ Architecture
 
 - The platform is composed of a **Frontend** and the **Backend**
 - The backend provides functionalities to users to enable them design participatory processes. It is also acts a repository for data and reports
-- The frontend is an application that is installable on Android devices. The frontend consumes configurations defined on the backend and renders participatory instruments on user devices thus allowing data capture using devices
+- The frontend is an application that is installable on mobile devices. The frontend consumes configurations defined on the backend and renders participatory instruments on user devices thus allowing data capture using devices. This is an application that is installable on mobile devices and provides interaction with the backend. The frontend is powered by the backend meaning the backend needs to be up and running for the frontend to function properly.
 
 Backend
 -------
@@ -42,5 +42,4 @@ This tool contains 3 main modules
 Frontend
 --------
 
-- This is the tool that end users interact with for data capture for the engagement processes
-- The frontend is fully reliant on the backend for optimal operation
+This is the tool that end users interact with for data capture for the engagement processes. The frontend is fully reliant on the backend for optimal operation. The frontend is able to operate in offline mode meaning data can be collected in situations of poor or no network connectivity.
