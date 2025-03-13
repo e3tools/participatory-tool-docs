@@ -25,25 +25,37 @@ This is the name that will be assigned to a column in the table storing the form
 
 **Length**
 This value limits the length of the values entered for the field. Such as, you can define that the country codes must not exceed a length of 3
-
-**Display Depends On**
-This property determines whether the field will be displayed or not. A condition that will be evaluated has to be specified e.g
-
-.. code-block:: javascript
-
-    doc.first_name == 'Peter'
-
-In the above example, this field will only be displayed when the value of first_name field has been set as Peter.
-This property is used to implement skip logic by defining the conditions which determine if a certain field will be displayed or not
-
-**Readonly Depends On**
-If this condition is satisfied, the field will be read only
-
-**Readonly Depends On**
-If this condition is satisfied, the field will be mandatory
  
 **Required**
 If this is checked, the field will be mandatory
+
+**Set Conditions To Display This Field**
+This sets the conditions that determin whether the field will be displayed or not.  A condition that will be evaluated has to be specified e.g
+
+.. code-block:: javascript
+
+    [["Sample Test Form","admin_three","=","Chinga"]]
+
+- In the above example, this field will only be displayed when the value of admin_three field has been set as Chinga.
+- This property is used to implement skip logic by defining the conditions which determine if a certain field will be displayed or not
+
+.. warning:: 
+
+    If you are setting conditions to make this field to display, ensure that the field has not been set as hidden. Otherwise, the field may show when it is not expected to be shown and vice versa.
+
+**Set Conditions To Make This Field Mandatory**
+This button sets the conditions, which if satistied, will cause the field to be rendered as mandatory
+
+.. warning:: 
+
+    You cannot set a field as mandatory and at the same time set the conditions to make the field mandatory. This is because there will be a clash and the system may perform unexpectedly. You have to pick one approach and not both
+
+**Set Conditions To Make This Field Readonly**
+This button sets the conditions, which if satistied, will cause the field to be rendered as read only
+
+.. warning:: 
+
+    You cannot set a field as read only and at the same time set the conditions to make the field read only. This is because there will be a clash and the system may perform unexpectedly. You have to pick one approach and not both
 
 **Default Value**
 Is specified, this will be the default value for the field
