@@ -50,14 +50,15 @@ or
 
 .. code:: JSON
 
-    { "population": [">", 2000000]" }
+    { "population": [">", 2000000] }
 
 
 3. To select a list of attendees with Farming and Livestock Keeping as their livelihoods
 
+
 .. code:: JSON
 
-    { "livelihood": ["in", ["Farming", "Livestock Keeping"]]" }
+    { "livelihood": ["in", ["Farming", "Livestock Keeping"]] }
 
 
 Please note that you will need to replace the field names with the appropriate names as specified when designing the linked form.
@@ -144,11 +145,23 @@ This is a Time field where you can define the Time in the field.
 
 **Linked Field**
 
-This is a field that derives its value from a property of another form that is being referenced in the current form. For example say you want to display the full name of a person after selecting their id number. In this example, you will have to first add a Link field that gets its data from the Person form. Then, you will add a Linked Field that then you specify the value of _Form To Link_ to be the _Person_ field. The value of _Linked Form Property_ will be set as the full name property of the Person form
+This is a field that derives its value from a property of another form that is being referenced in the current form. For example say you want to display the full name of a person after selecting their id number. In this example, you will have to first add a Link field that gets its data from the Person form. Then, you will add a Linked Field that then you specify the value of **Form To Link** to be the **Person** field. The value of **Linked Form Property** will be set as the full name property of the Person form
 
 .. image:: ../_static/images/linked-field.png
     :align: center
     :alt: Linked Field
+
+To use a Linked Field, follow these steps:
+
+    - Add a Link field and set the value of the Form property to be the form that you want to retrieve data from
+    - Add another field of type Linked Field
+        
+        - Set the value of **Form To Link** to be the field that you added in step 1
+        - Set the **Linked Form Property** to be the field of the **Form To Link** that you want to pull data for
+
+.. note:: 
+
+    Using this field type, you can show a list of values captured as part of another engagement tool.  
 
 
 Child / Table Form
