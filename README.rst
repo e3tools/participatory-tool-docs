@@ -22,4 +22,9 @@ The full documentation is hosted at `Read the Docs <https://participatory-tool.r
     
     sphinx-build docs docs/_build/
 
-- Navigate to docs/_build/index.html and open the file
+- Navigate to docs/_build/index.html to view the docs in a browser
+
+.. code-block:: bash
+
+    cd docs/_build
+    python -m http.server 8003

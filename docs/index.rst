@@ -15,6 +15,7 @@ Welcome to participatory-tool-docs's documentation!
    installation
    form-design/index 
    engagement/index
+   triggers/index
    technical/index
    reports/index
    frontend/index
