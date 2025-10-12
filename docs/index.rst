@@ -18,6 +18,7 @@ Welcome to participatory-tool-docs's documentation!
    triggers/index
    technical/index
    reports/index
+   ai/index
    frontend/index
    setup/index
      

@@ -65,7 +65,7 @@ Please note that you will need to replace the field names with the appropriate n
 
 **Check**
 
-This will enable you to have a checkbox here. You can set the Default value to 1 and it will be checked by default.
+This will enable you to have a checkbox here. You can set the Default value to 1 and it will be checked by default. When you set the field as mandatory, the form will only submit if the checkbox has been checked.
 
 **Select**
 
@@ -119,6 +119,10 @@ will result into
 
 Currency field holds numeric value, like Item Price, Amount, etc. Currency field can have value up to six decimal places. Also, you can have a currency symbol being shown for the currency field.
 
+**Duration** 
+ 
+You can use the Duration field if you want to define a timespan. If you don't want to track duration in terms of days or seconds, you can enable "Hide Days" and "Hide Seconds" options respectively in your Form.
+
 **Float** 
 
 Float field carries numeric value, up to nine decimal places.
@@ -131,9 +135,25 @@ A Geolocation field will show a map view on which you can draw polygons, lines, 
 
 The integer field holds numeric value, without decimal place.
 
+**Password**
+
+This field is used when you want to capture sensitive data such as a password. As you type, the text is replaced by a series of asterisks
+
+**Rating**
+
+You can define the field as a Rate field which in the background will be calculated as Rating.
+
+**Small Text**
+
+Text field carries text content and has more character limit than the Data field. The display area is slightly larger than that of Data field but slightly smaller than the display area of a Text field. Use this field when the data is likely to span several lines.
+
+**Signature**
+
+You can define the field to be a Signature field wherein you can add the Digital Signature in this field.
+
 **Text**
 
-Text field carries text content and has more character limit than the Data field.
+Text field carries text content and has more character limit than the Data field. The field is ideal for very long text that spans multiple lines or paragraphs
  
 **Table MultiSelect**
 
