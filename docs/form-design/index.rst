@@ -15,3 +15,4 @@ Home page for form design
    reusable-list
    engagement-tool-group
    link-filters
+   design-guidelines
